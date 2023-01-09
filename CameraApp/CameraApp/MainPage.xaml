@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:cameraView="clr-namespace:Camera2XamF"
+             x:Class="CameraApp.MainPage">
+
+    <Grid x:Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="80"/>
+        </Grid.ColumnDefinitions>
+        <!--<cameraView:CameraView
+                    x:Name="cameraView"           
+                    BackgroundColor="Red"
+                    LenseFacing="Rear"
+                    AutoInitCamera="False"
+                    Margin="0,0,0,0"
+                    Grid.Column="0" Grid.Row="0">
+        </cameraView:CameraView>-->
+
+
+        <Button Grid.Column="1"
+                            Text="Take Picture"
+                            x:Name="CameraButton"
+                            Clicked="CaptureBtn_Clicked" 
+                            FontSize="Medium"
+                            WidthRequest="84"/>
+
+    </Grid>
+
+</ContentPage>
